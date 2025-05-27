@@ -1,0 +1,229 @@
+body{
+    display: grid;
+    grid-template-areas: 'header'
+                        'main'
+                        'footer';
+    grid-template-rows: 15% 75% 10%;
+    height: 1250px;
+}
+header{
+    background-color: gray;
+    color: black;
+    grid-area: header;
+    justify-items: center;
+}
+main{
+    background-color: lightgray;
+    color: black;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 'info'
+                        'fotos';
+    grid-template-rows: 20% 80%;
+}
+footer{
+    background-color: gray;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.div1{
+    grid-area: info;
+    background-color: lightgray;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.div2{
+    grid-area: fotos;
+    grid-template-areas: 'foto1 foto2'
+                        'foto3 foto4';
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 5%;
+}
+.div21{
+    display: grid;
+    grid-area: foto1;
+    background-image: url("imagenes/foto1.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.div22{
+    display: grid;
+    grid-area: foto2;
+    background-image: url("imagenes/foto2.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.div23{
+    display: grid;
+    grid-area: foto3;
+    background-image: url("imagenes/foto3.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.div24{
+    display: grid;
+    grid-area: foto4;
+    background-image: url("imagenes/foto4.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.imagen1{
+    background-image: url("imagenes/caracteristicas.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; 
+}
+
+a:hover {
+  color: white;
+}
+button {
+    background-color: grey;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #333;
+    transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+body{
+    display: grid;
+    grid-template-areas: 'header'
+                        'main'
+                        'footer';
+    grid-template-rows: 15% 75% 10%;
+    height: 2500px;
+}
+header{
+    background-color: gray;
+    color: black;
+    grid-area: header;
+    justify-items: center;
+}
+main{
+    background-color: lightgray;
+    color: black;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 'info'
+                        'fotos';
+    grid-template-rows: 20% 80%;
+}
+footer{
+    background-color: gray;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.div1{
+    grid-area: info;
+    background-color: lightgray;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.div2{
+    grid-area: fotos;
+    grid-template-areas: 'foto1'
+                        'foto2'
+                        'foto3'
+                        'foto4';
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    
+}
+.div21{
+    display: grid;
+    grid-area: foto1;
+    background-image: url("imagenes/foto1.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.div22{
+    display: grid;
+    grid-area: foto2;
+    background-image: url("imagenes/foto2.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.div23{
+    display: grid;
+    grid-area: foto3;
+    background-image: url("imagenes/foto3.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.div24{
+    display: grid;
+    grid-area: foto4;
+    background-image: url("imagenes/foto4.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.imagen1{
+    background-image: url("imagenes/caracteristicas.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.video{
+    display: flex;
+    justify-content: space-around;
+    padding: 10%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; 
+}
+
+a:hover {
+  color: white; /* Azul más oscuro al pasar el ratón */
+button {
+    background-color: grey;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #333;
+    transform: scale(0.97);
+}
+}
+}
